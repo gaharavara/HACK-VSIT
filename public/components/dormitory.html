@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Health</title>
+    <script>
+        function click(){
+            console.log('df')
+            document.cookie="col=xyz"+"beds="+document.getElementById('beds').value;
+        }
+    </script>
+
 </head>
 <body>
     <div class="d-flex">
         <span class="m-4">No of beds rented</span>
-        <input></input>
+        <input id="beds"></input>
         <br>
         <span class="m-4">Upload pictures</span>
-        <input type="file"></input>
+        <input type="file" onclick="click()"></input>
     </div>
 
 </body>
